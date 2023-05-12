@@ -41,11 +41,7 @@ public class Facebook {
 	// Step 10: Enter the password
 		d.findElement(By.xpath("//div[text()='New password']/following::input")).sendKeys("RmS1204");
 		
-	 //Step 11: Handle all the three drop downs
-		d.findElement(By.xpath("//select[@id='day']")).sendKeys("10");
-		d.findElement(By.xpath("//select[@id='month']")).sendKeys("Jan");
-		d.findElement(By.xpath("//select[@id='year']")).sendKeys("1990");
-		
+			
 	// Step 11: Handle all the three drop downs
 		WebElement day = d.findElement(By.id("day"));
 		Select D = new Select(day);
@@ -58,7 +54,7 @@ public class Facebook {
 	
 		WebElement year = d.findElement(By.id("year"));
 		Select Y = new Select(year);
-	Y.selectByValue("1995");
+		Y.selectByValue("1995");
 	
 
 	// Step 12: Select the radio button "Female" ( A normal click will do for this step) 
