@@ -17,16 +17,20 @@ public class CloseBrowser {
 
 		//2. Enter email as "kumar.testleaf@gmail.com"
 		d.findElement(By.xpath("//label[text()='Email:']/following-sibling::input")).sendKeys("kumar.testleaf@gmail.com");
+		
 		//3. Enter Password as "leaf@12"
 		d.findElement(By.xpath("//label[text()='Password:']/following-sibling::input")).sendKeys("leaf@12");
+		
 		//4. Click login button
 		d.findElement(By.xpath("//button[@type='submit']")).click();
 		
 		//5. Get the title of the page and print
 		String title = d.getTitle();
 		System.out.println(title);
+		
 		//6. Click on Log Out
 		d.findElement(By.xpath("//a[text()='Log Out']")).click();
+		
 		//7. Close the browser (use -driver.close())
 		d.close();
 	}
