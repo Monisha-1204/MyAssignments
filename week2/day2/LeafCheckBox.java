@@ -7,7 +7,7 @@ public class LeafCheckBox {
 
 public static void main(String[] args) throws InterruptedException {
 				// TODO Auto-generated method stub
-		ChromeDriver driver = new ChromeDriver();
+				ChromeDriver driver = new ChromeDriver();
 				
 				driver.navigate().to("https://www.leafground.com/checkbox.xhtml");
 				driver.manage().window().maximize();
@@ -20,16 +20,12 @@ public static void main(String[] args) throws InterruptedException {
 				
 				driver.findElement(By.xpath("(//div[contains(@class,'ui-chkbox-box ui-widget')])[3]")).click();
 
-				
-			driver.findElement(By.xpath("//div[@class='ui-toggleswitch-slider']")).click();
+				driver.findElement(By.xpath("//div[@class='ui-toggleswitch-slider']")).click();
 			
 				//Tristates
-				
 				driver.findElement(By.xpath("//div[contains(@data-iconstates,'[\"\",\"ui-icon ui-icon-check')]")).click();
-				
 				Thread.sleep(2000);
 			
-//				
 				// isSelected is checked works fine
 				
 				boolean selected = driver.findElement(By.xpath("(//div[contains(@class,'ui-selectbooleancheckbox ui-chkbox')])[3]")).isSelected();
@@ -53,11 +49,7 @@ public static void main(String[] args) throws InterruptedException {
 				// Barcelona - - Grandparent to Grandchild
 				driver.findElement(By.xpath("(//li[@data-item-value='Barcelona']//div)[3]")).click();
 			
-				//driver.findElement(By.xpath("//a[@class='ui-selectcheckboxmenu-close ui-corner-all']")).click();
-				
-				Thread.sleep(3000);
-				
-				//driver.close();	
+				//driver.findElement(By.xpath("//a[@class='ui-selectcheckboxmenu-close ui-corner-all']")).click();				
 
 			}
 
