@@ -76,27 +76,6 @@ public class DeleteLead {
 
 		// 17 Close the browser (Do not log out)
 		driver.close();
-//		//11	Capture lead ID 
-//		String leadId=driver.findElement(By.xpath("(//a[@class='linktext'])[4]")).getText();
-//		System.out.println(leadId);
-//		//		12	Click First Resulting lead
-//
-//		driver.findElement(By.xpath("(//a[@class='linktext'])[4]")).click();
-//		//13	Click Delete
-//		driver.findElement(By.xpath("//a[text()='Delete']")).click();
-////		14	Click Find leads
-//		driver.findElement(By.xpath("//a[text()='Find Leads']")).click();
-//
-////		15	Enter captured lead ID
-//		driver.findElement(By.xpath("//a[text()='Find Leads']")).click();
-// 
-////		16	Click find leads button
-////		17	Verify message "No records to display" in the Lead List. This message confirms the successful deletion
-////		18	Close the browser (Do not log out)
-//		driver.close();
-
-
-
 	}
 
 }
